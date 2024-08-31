@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "magic-8-ball"
+version = "0.1.0"
+description = "This is a python version of the popular magic 8 ball fortune telling tool"
+authors = ["IBK <ibukunoluwa.adetoba@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.6"
+mypy = "^1.11.2"
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.pylint.MASTER]
+disable = ["C0114", "C0301"]
+
+[tool.black]
+line-length = 120
